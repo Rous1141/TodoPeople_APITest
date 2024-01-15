@@ -36,3 +36,4 @@
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.pdb
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.genruntimeconfig.cache
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/ref/TodoPeople.dll
+/Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.sourcelink.json
