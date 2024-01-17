@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{BE1251A9-26AB-447B-B543-115F2FA58FA5}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TodoPeople PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TodoPeople/DatabaseContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoPeople/Controllers/PeopleController.cs">
     <Files>
-      <File FileName="TodoPeople/TodoPeople.http" />
       <File FileName="TodoPeople/Models/PeopleDTO.cs" />
-      <File FileName="TodoPeople/appsettings.json" Line="3" Column="23" />
-      <File FileName="TodoPeople/DatabaseContext.cs" Line="19" Column="88" />
-      <File FileName="TodoPeople/Program.cs" Line="29" Column="1" />
-      <File FileName="TodoPeople/Controllers/PeopleController.cs" Line="37" Column="14" />
       <File FileName="TodoPeople/appsettings.Development.json" />
+      <File FileName="TodoPeople/appsettings.json" />
+      <File FileName="TodoPeople/Controllers/PeopleController.cs" Line="13" Column="20" />
+      <File FileName="TodoPeople/Program.cs" />
+      <File FileName="TodoPeople/DatabaseContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,19 +17,21 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PeopleController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="DatabaseContext.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TodoPeople PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>
