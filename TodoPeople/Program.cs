@@ -15,6 +15,8 @@ public class Program
 
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddAuthorization();
+        builder.Services.AddAuthentication("Bearer").AddJwtBearer();
 
         // Add services to the container.
 
@@ -46,11 +48,13 @@ public class Program
 
         app.UseCors();
         // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
+        //if (app.Environment.IsDevelopment())
+        //{
             app.UseSwagger();
             app.UseSwaggerUI();
-        }
+       //}
+
+        app.MapSwagger().RequireAuthorization();
 
         app.UseHttpsRedirection();
 
