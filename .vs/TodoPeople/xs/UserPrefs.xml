@@ -12,16 +12,15 @@
       <File FileName="TodoPeople/appsettings.Development.json" />
       <File FileName="TodoPeople/appsettings.json" />
       <File FileName="TodoPeople/Controllers/PeopleController.cs" />
-      <File FileName="TodoPeople/Program.cs" Line="20" Column="71" />
+      <File FileName="TodoPeople/Program.cs" Line="72" Column="8" />
       <File FileName="TodoPeople/DatabaseContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TodoPeople">
+          <Node name="TodoPeople" expanded="True">
             <Node name="TodoPeople" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
