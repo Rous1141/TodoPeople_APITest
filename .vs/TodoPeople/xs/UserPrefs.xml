@@ -8,18 +8,19 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TodoPeople/Program.cs">
     <Files>
-      <File FileName="TodoPeople/Models/PeopleDTO.cs" />
+      <File FileName="TodoPeople/Models/PeopleDTO.cs" Line="1" Column="1" />
       <File FileName="TodoPeople/appsettings.Development.json" />
       <File FileName="TodoPeople/appsettings.json" />
-      <File FileName="TodoPeople/Controllers/PeopleController.cs" />
-      <File FileName="TodoPeople/Program.cs" Line="72" Column="8" />
+      <File FileName="TodoPeople/Controllers/PeopleController.cs" Line="13" Column="2" />
+      <File FileName="TodoPeople/Program.cs" Line="65" Column="56" />
       <File FileName="TodoPeople/DatabaseContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TodoPeople" expanded="True">
-            <Node name="TodoPeople" expanded="True">
+          <Node name="TodoPeople">
+            <Node name="TodoPeople">
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>

@@ -36,24 +36,22 @@ public class Program
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
         });
-
-
-
         builder.Services.AddDbContext<DatabaseContext>();
 
-        //Add CORS policy to access API with Localhost FE
+        //Add CORS policy to access API with Localhost FE and Vercel
         builder.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(
                 policy =>
                 {
                     policy.WithOrigins("http://localhost:3000");
+                    policy.WithOrigins("https://learning03.vercel.app");
                 });
         });
         builder.Services.AddControllers();
+        //
 
         var app = builder.Build();
-
         app.UseCors();
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
