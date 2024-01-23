@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MySqlConnector;
+using System.Security.Claims;
 
 namespace TodoPeople;
 
@@ -16,7 +17,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddAuthorization();
-        builder.Services.AddAuthentication("Bearer").AddJwtBearer();
+        builder.Services.AddAuthentication("Bearer").AddBearerToken();
 
         // Add services to the container.
 
