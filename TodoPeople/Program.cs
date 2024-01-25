@@ -44,8 +44,9 @@ public class Program
             options.AddDefaultPolicy(
                 policy =>
                 {
-                    policy.WithOrigins("http://localhost:3000");
-                    policy.WithOrigins("https://learning03.vercel.app");
+                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod(); // Allow All response methods (GET,POST,PUT,DELETE)
                 });
         });
         builder.Services.AddControllers();
