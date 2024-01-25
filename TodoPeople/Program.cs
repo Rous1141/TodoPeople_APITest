@@ -89,8 +89,8 @@ public class Program
 
         app.UseEndpoints(endpoints =>
         {
-            endpoints.MapGet("/Update",
-                    context => context.Response.WriteAsync("Update"))
+            endpoints.MapGet("/people",
+                    context => context.Response.WriteAsync("people"))
                     .RequireCors(MyCORSPolicies); //Allow CORS Policies
 
             endpoints.MapControllers()
