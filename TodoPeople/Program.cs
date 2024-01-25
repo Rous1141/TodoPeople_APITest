@@ -43,7 +43,8 @@ public class Program
                 policy =>
                 {
                     policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")   
-                    .AllowAnyMethod();
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
                 });
         }
         );
