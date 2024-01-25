@@ -47,16 +47,32 @@ public class Program
                     policy.WithOrigins("http://localhost:3000");
                     policy.WithOrigins("https://learning03.vercel.app");
                 });
+
+        }
+        );
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowSpecificHeaders",
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000")
+                           .WithMethods("GET", "POST", "PUT", "DELETE")
+                           .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
+                    builder.WithOrigins("https://learning03.vercel.app")
+                           .WithMethods("GET", "POST", "PUT", "DELETE")
+                           .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
+                });
         });
         builder.Services.AddControllers();
         //
 
         var app = builder.Build();
         app.UseCors();
+        app.UseCors("AllowSpecificHeaders");
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
         //{
-            app.UseSwagger();
+        app.UseSwagger();
             app.UseSwaggerUI();
         //}
 
