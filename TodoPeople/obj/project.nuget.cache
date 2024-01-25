@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eSfDEBLsFB8M/gswWwuPJk6MdpxM8z1dDUtBim8CSqjbe6z6uGYFoY/bMOpUa8HjH1Mt3eJWTpdEi7xQWOHpzQ==",
+  "dgSpecHash": "BXxR8YNQu16FOfFBIrUSC1eKKCnD5QbKzsT3GHiuJoo3QDCocRL1kSYR7ekzZaklqmzcE7149VQI84VN6GcnTg==",
   "success": true,
   "projectFilePath": "/Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/TodoPeople.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,9 @@
     "/Users/hendrix/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/hendrix/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/hendrix/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/Users/hendrix/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/Users/hendrix/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/Users/hendrix/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+    "/Users/hendrix/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
