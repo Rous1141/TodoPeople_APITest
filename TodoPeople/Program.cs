@@ -42,9 +42,9 @@ public class Program
             options.AddPolicy(MyCORSPolicies,
                 policy =>
                 {
-                    policy.WithOrigins("http://localhost:3000/Update/1", "https://learning03.vercel.app")   
-                    .AllowAnyMethod()
-                    .AllowAnyHeader();
+                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
+                    .AllowAnyHeader()
+                    .WithMethods("GET","PUT","DELETE");
                 });
         }
         );
@@ -65,7 +65,6 @@ public class Program
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseRouting();
-
         app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
