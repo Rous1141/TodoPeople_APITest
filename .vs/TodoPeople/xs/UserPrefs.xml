@@ -6,11 +6,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.TodoPeople PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TodoPeople/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoPeople/Program.cs">
     <Files>
       <File FileName="TodoPeople/Controllers/PeopleController.cs" Line="1" Column="1" />
-      <File FileName="TodoPeople/Program.cs" Line="69" Column="30" />
-      <File FileName="TodoPeople/DatabaseContext.cs" />
+      <File FileName="TodoPeople/Program.cs" Line="47" Column="39" />
+      <File FileName="TodoPeople/DatabaseContext.cs" Line="1" Column="1" />
       <File FileName="TodoPeople/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
