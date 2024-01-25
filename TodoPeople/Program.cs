@@ -78,12 +78,6 @@ public class Program
 
         app.MapSwagger().RequireAuthorization();
        
-
-        app.UseHttpsRedirection();
-
-        app.UseAuthorization();
-
-
         app.MapControllers();
 
         app.Run();
