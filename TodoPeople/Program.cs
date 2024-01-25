@@ -17,9 +17,6 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddAuthorization();
-        builder.Services.AddAuthentication("Bearer").AddBearerToken();
-
         // Add services to the container.
 
         //Configure DbContext into the BE deployment -> dependency injection
