@@ -22,6 +22,7 @@
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.csproj.CoreCompileInputs.cache
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.MvcApplicationPartsAssemblyInfo.cs
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.sourcelink.json
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/staticwebassets.build.json
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/staticwebassets.development.json
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/staticwebassets/msbuild.TodoPeople.Microsoft.AspNetCore.StaticWebAssets.props
@@ -36,4 +37,3 @@
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.pdb
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.genruntimeconfig.cache
 /Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/ref/TodoPeople.dll
-/Volumes/Ze_Data/Document/CSharp_NET/SelfTaught/TodoPeople/TodoPeople/obj/Debug/net8.0/TodoPeople.sourcelink.json

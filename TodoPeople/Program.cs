@@ -62,6 +62,11 @@ public class Program
         //
 
         var app = builder.Build();
+
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+        app.UseRouting(); // Contruct a route to your endpoint
+
         app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
@@ -78,14 +83,20 @@ public class Program
 
         app.MapSwagger().RequireAuthorization();
        
-
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
 
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapGet("/Update",
+                    context => context.Response.WriteAsync("Update"))
+                    .RequireCors(MyCORSPolicies); //Allow CORS Policies
 
-        app.MapControllers();
+            endpoints.MapControllers()
+                    .RequireCors(MyCORSPolicies); //Allow CORS Policies
 
+        });
         app.Run();
     }
 }
