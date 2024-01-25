@@ -39,9 +39,9 @@ public class Program
             options.AddPolicy(MyCORSPolicies,
                 policy =>
                 {
-                    policy.AllowAnyOrigin()
+                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
                     .AllowAnyHeader()
-                    .AllowAnyMethod();
+                    .AllowAnyMethod(); // Allow All response methods (GET,POST,PUT,DELETE)
                 });
         }
         );
