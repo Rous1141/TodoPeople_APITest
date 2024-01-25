@@ -76,7 +76,7 @@ public class Program
             c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
         });
 
-        app.MapSwagger().RequireAuthorization();
+        app.MapSwagger();
        
         app.MapControllers();
 
