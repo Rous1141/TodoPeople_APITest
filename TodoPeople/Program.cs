@@ -42,8 +42,7 @@ public class Program
             options.AddPolicy(MyCORSPolicies,
                 policy =>
                 {
-                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
-                    .AllowAnyHeader()
+                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")   
                     .AllowAnyMethod();
                 });
         }
@@ -62,11 +61,6 @@ public class Program
         //
 
         var app = builder.Build();
-
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-        app.UseRouting(); // Contruct a route to your endpoint
-
         app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
@@ -83,20 +77,14 @@ public class Program
 
         app.MapSwagger().RequireAuthorization();
        
+
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
 
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapGet("/people",
-                    context => context.Response.WriteAsync("people"))
-                    .RequireCors(MyCORSPolicies); //Allow CORS Policies
 
-            endpoints.MapControllers()
-                    .RequireCors(MyCORSPolicies); //Allow CORS Policies
+        app.MapControllers();
 
-        });
         app.Run();
     }
 }
