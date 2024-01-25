@@ -42,7 +42,7 @@ public class Program
             options.AddPolicy(MyCORSPolicies,
                 policy =>
                 {
-                    policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")   
+                    policy.WithOrigins("http://localhost:3000/Update/1", "https://learning03.vercel.app")   
                     .AllowAnyMethod()
                     .AllowAnyHeader();
                 });
