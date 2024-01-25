@@ -77,7 +77,7 @@ public class Program
         //});
 
         app.UseCors();
-        app.UseCors("AllowSpecificHeaders");
+        //app.UseCors("AllowSpecificHeaders");
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
         //{
