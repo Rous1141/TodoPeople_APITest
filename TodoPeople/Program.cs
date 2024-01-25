@@ -48,26 +48,26 @@ public class Program
                     policy.WithOrigins("https://learning03.vercel.app");
                 });
 
-            //}
-            //);
-            //builder.Services.AddCors(options =>
-            //{
-            //    options.AddPolicy("AllowSpecificHeaders",
-            //        builder =>
-            //        {
-            //            builder.WithOrigins("http://localhost:3000")
-            //                   .WithMethods("GET", "POST", "PUT", "DELETE")
-            //                   .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
-            //            builder.WithOrigins("https://learning03.vercel.app")
-            //                   .WithMethods("GET", "POST", "PUT", "DELETE")
-            //                   .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
-            //        });
-            //});
-            //builder.Services.AddControllers();
-            //
+        }
+        );
+        //builder.Services.AddCors(options =>
+        //{
+        //    options.AddPolicy("AllowSpecificHeaders",
+        //        builder =>
+        //        {
+        //            builder.WithOrigins("http://localhost:3000")
+        //                   .WithMethods("GET", "POST", "PUT", "DELETE")
+        //                   .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
+        //            builder.WithOrigins("https://learning03.vercel.app")
+        //                   .WithMethods("GET", "POST", "PUT", "DELETE")
+        //                   .WithHeaders("Content-Type", "Authorization"); // Specify the allowed headers here
+        //        });
+        //});
+        //builder.Services.AddControllers();
+        //
 
 
-            var app = builder.Build();
+        var app = builder.Build();
         //Disable All CORS policy => Does not recommended on real practice!!!
         //app.UseCors(builder =>
         //{
