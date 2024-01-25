@@ -17,6 +17,9 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        builder.Services.AddAuthorization();
+        builder.Services.AddAuthentication("Bearer").AddBearerToken();
+
         // Add services to the container.
 
         //Configure DbContext into the BE deployment -> dependency injection
@@ -41,7 +44,7 @@ public class Program
                 {
                     policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
                     .AllowAnyHeader()
-                    .AllowAnyMethod(); // Allow All response methods (GET,POST,PUT,DELETE)
+                    .AllowAnyMethod();
                 });
         }
         );
@@ -59,10 +62,10 @@ public class Program
         //
 
         var app = builder.Build();
+        app.UseCors(MyCORSPolicies);
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseRouting();
-        app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
         //{
@@ -76,8 +79,11 @@ public class Program
             c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
         });
 
-        app.MapSwagger();
-       
+        app.MapSwagger().RequireAuthorization();
+
+        app.UseAuthorization();
+
+
         app.MapControllers();
 
         app.Run();
