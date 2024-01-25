@@ -12,9 +12,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-
-        
-
+        var MyCORSPolicies = "_MyCORSPolicies";
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -41,19 +39,30 @@ public class Program
         //Add CORS policy to access API with Localhost FE and Vercel
         builder.Services.AddCors(options =>
         {
-            options.AddDefaultPolicy(
+            options.AddPolicy(MyCORSPolicies,
                 policy =>
                 {
                     policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
                     .AllowAnyHeader()
-                    .AllowAnyMethod(); // Allow All response methods (GET,POST,PUT,DELETE)
+                    .AllowAnyMethod();
                 });
-        });
+        }
+        );
+        //builder.Services.AddCors(options =>
+        //{
+        //    options.AddDefaultPolicy(
+        //        policy =>
+        //        {
+        //            policy.WithOrigins("http://localhost:3000", "https://learning03.vercel.app")
+        //            .AllowAnyHeader()
+        //            .AllowAnyMethod(); // Allow All response methods (GET,POST,PUT,DELETE)
+        //        });
+        //});
         builder.Services.AddControllers();
         //
 
         var app = builder.Build();
-        app.UseCors();
+        app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
         //{
