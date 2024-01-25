@@ -76,13 +76,13 @@ public class Program
                    .AllowAnyHeader();
         });
 
-        //app.UseCors();
+        app.UseCors();
         //app.UseCors("AllowSpecificHeaders");
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
         //{
         app.UseSwagger();
-            app.UseSwaggerUI();
+        app.UseSwaggerUI();
         //}
 
         // specifying the Swagger JSON endpoint.
