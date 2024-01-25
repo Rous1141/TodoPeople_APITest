@@ -62,6 +62,10 @@ public class Program
         //
 
         var app = builder.Build();
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+        app.UseRouting();
+
         app.UseCors(MyCORSPolicies);
         // Configure the HTTP request pipeline.
         //if (app.Environment.IsDevelopment())
